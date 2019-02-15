@@ -1,0 +1,31 @@
+{
+  "name": "gabyquiles/doctrine-geospatial-types",
+  "description": "Add geospatial DQL types",
+  "type": "library",
+  "version": "dev-master",
+  "authors": [
+    {
+      "name": "Gabriel A. Quiles-Perez",
+      "email": "info@gabyquiles.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0",
+    "doctrine/orm": "^2.6"
+  },
+  "require-dev": {
+    "phpspec/phpspec": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "GabyQuiles\\Doctrine\\GeoSpatial\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "GabyQuiles\\Doctrine\\GeoSpatial\\Test\\": "tests/",
+      "spec\\GabyQuiles\\Doctrine\\GeoSpatial\\": "spec/"
+    }
+  }
+}

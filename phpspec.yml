@@ -1,0 +1,5 @@
+suites:
+  default:
+    namespace: GabyQuiles\Doctrine\GeoSpatial
+    psr4_prefix: GabyQuiles\Doctrine\GeoSpatial
+formatter.name: pretty
