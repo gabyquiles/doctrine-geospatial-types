@@ -3,6 +3,7 @@
   "description": "Add geospatial DQL types",
   "type": "library",
   "version": "dev-master",
+  "license": "Apache-2.0",
   "authors": [
     {
       "name": "Gabriel A. Quiles-Perez",
