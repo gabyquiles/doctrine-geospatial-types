@@ -36,7 +36,19 @@ class PointType extends Type
 
     public function convertToPHPValue($value, AbstractPlatform $platform)
     {
-//        TODO: Fix this
-        return new Point(1, 2);
+        //Null fields come in as empty strings
+        if ($value == '') {
+            return null;
+        }
+
+        $data = unpack('x/x/x/x/corder/Ltype/dlat/dlon', $value);
+        return new Point($data['lat'], $data['lon']);
+    }
+    
+    public function convertToDatabaseValue($value, AbstractPlatform $platform)
+    {
+        if (!$value) return;
+
+        return pack('xxxxcLdd', 1, 1, $value->getLatitude(), $value->getLongitude());
     }
 }
