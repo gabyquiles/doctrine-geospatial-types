@@ -2,7 +2,7 @@
   "name": "gabyquiles/doctrine-geospatial-types",
   "description": "Add geospatial DQL types",
   "type": "library",
-  "version": "dev-master",
+  "version": "0.2",
   "license": "Apache-2.0",
   "authors": [
     {
